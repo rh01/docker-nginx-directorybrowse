@@ -1,0 +1,13 @@
+version: '2'
+services:
+    nodered:
+        build: build
+        image: docker.io/lordmike/nginx-directorybrowse
+        ports:
+            - "80:80"
+        volumes:
+            - "${PWD}/data:/usr/share/nginx/html/"
+        privileged: true
+        restart: "unless-stopped"
+
+
