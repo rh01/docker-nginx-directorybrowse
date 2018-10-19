@@ -8,6 +8,12 @@ Static website docker image using nginx:alpine which enables directory browsing
 
 * `/usr/share/nginx/html` - contains static content to serve
 
+### How to start?
+
+```bash
+docker-compose up -d
+```
+
 ### Environment variables
 
 None
